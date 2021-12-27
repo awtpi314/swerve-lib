@@ -3,7 +3,7 @@ package com.swervedrivespecialties.swervelib;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardContainer;
 
 @FunctionalInterface
-public interface DriveControllerFactory<Controller extends DriveController, DriveConfiguration> {
+public interface DriveControllerFactory<Controller extends DriveController<?>, DriveConfiguration> {
     default void addDashboardEntries(
             ShuffleboardContainer container,
             Controller controller

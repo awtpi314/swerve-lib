@@ -1,7 +1,9 @@
 package com.swervedrivespecialties.swervelib;
 
-public interface DriveController {
+public interface DriveController<T> {
     void setReferenceVoltage(double voltage);
 
     double getStateVelocity();
+
+    T getMotor();
 }

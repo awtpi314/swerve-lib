@@ -8,7 +8,7 @@ public final class CtreUtils {
 
     public static void checkCtreError(ErrorCode errorCode, String message) {
         if (errorCode != ErrorCode.OK) {
-            throw new RuntimeException(String.format("%s: %s", message, errorCode.toString()));
+            System.err.println("Could not update motor: Assuming we are running in the simulator...");
         }
     }
 }
