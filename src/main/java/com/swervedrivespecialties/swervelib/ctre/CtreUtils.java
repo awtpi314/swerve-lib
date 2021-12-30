@@ -12,7 +12,7 @@ public final class CtreUtils {
         if (errorCode != ErrorCode.OK && RobotBase.isReal()) {
             throw new RuntimeException(String.format("%s: %s", message, errorCode.toString()));
         } else if (!RobotBase.isReal()) {
-            System.err.println("Motor config failed because running in simulator");
+            System.err.println("Motor config failed because code is running in the simulator");
         }
     }
 }
